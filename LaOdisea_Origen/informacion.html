@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Información</title>
+
+    <link rel="stylesheet" href="inicio.css">
+    <!-- PWA: identidad e icono de la aplicación -->
+    <link rel="manifest" href="./manifest.webmanifest?v=3">
+    <meta name="theme-color" content="#101b17">
+    <link rel="icon" type="image/png" href="./icons/icon-192-v2.png">
+
+    <!-- PWA: registro del service worker -->
+    <script src="./pwa.js?v=4" defer></script>
+    <script src="./idioma.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <a class="logo" href="Inicio.html">
+            <span class="logo-marca" aria-hidden="true"><svg viewBox="0 0 28 28" fill="none"><path d="M14 2 17.5 10.5 26 14 17.5 17.5 14 26 10.5 17.5 2 14 10.5 10.5Z" fill="currentColor"/><circle cx="14" cy="14" r="3" fill="#12221d"/></svg></span>
+            <span>La Odisea</span>
+        </a>
+        <button class="selector-idioma" type="button" aria-label="Cambiar a inglés" data-idioma="es">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c5 4 5 14 0 18-5-4-5-14 0-18Z"/></svg>
+            <span aria-hidden="true">ES</span><span aria-hidden="true">/</span><span aria-hidden="true">EN</span>
+        </button>
+        <button class="menu-toggle" type="button" aria-label="Menú de navegación" aria-controls="menu-principal" aria-expanded="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+        <nav class="menu" id="menu-principal" aria-label="Menú principal">
+            <a href="Inicio.html">Inicio</a>
+            <a href="mecanicas.html">Mecánicas</a>
+            <a href="escenarios.html">Escenarios</a>
+            <a href="personajes.html">Personajes</a>
+            <a href="informacion.html" aria-current="page">Información</a>
+        </nav>
+    </header>
+
+
+    <main class="contenido-informacion">
+
+        <!-- PRESENTACIÓN -->
+
+        <section class="presentacion">
+
+            <div class="imagen-info">
+                <img src="img/imagen-circular.png" alt="Imagen del videojuego">
+            </div>
+
+            <div class="texto-info">
+
+                <h1>Información del videojuego</h1>
+
+            
+                <p>
+                  <strong>Ambientación:</strong> Un mundo donde las universidades están representadas
+                  por animales antropomórficos, cada una con su propia cultura, territorio y conflictos.
+                   La historia transcurre principalmente en Nayarit, México, integrando referencias
+                 locales y universitarias.
+                 </p>
+
+                 <p>
+                  <strong>Tono:</strong> Divertido, irreverente y ligero, con un enfoque en la rivalidad
+                   entre universidades y la resolución de conflictos a través de la aventura.
+                   </p>
+
+                 <p>
+                  <strong>Perspectiva:</strong> 2D, con énfasis en la exploración y el movimiento fluido.
+                 </p>
+
+                 <p>
+                  <strong>Género:</strong> Acción y aventura, con elementos de exploración,
+                  plataformas y combate.
+                </p>
+
+        </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DATOS GENERALES -->
+
+        <section class="bloque">
+
+            <h2>Datos generales</h2>
+
+            <div class="tarjetas">
+
+                <div class="tarjeta">
+                    <h3>Duración del juego</h3>
+                    <p>Aproximadamente 3 horas.</p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Clasificación</h3>
+                    <p> E - Para Todos.</p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Tipo</h3>
+                    <p>Acción, aventura y pelea.</p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Jugadores</h3>
+                    <p>1 jugador.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- OBJETIVO -->
+
+        <section class="bloque">
+
+            <h2>Objetivo del juego</h2>
+
+            <div class="caja-grande">
+
+                <p>
+                    El objetivo del juego es ayudar al protagonista a investigar
+                    lo ocurrido en la Universidad Tecnológica de Nayarit,
+                    enfrentarse a los enemigos y completar los diferentes
+                    desafíos que aparecen durante la aventura.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- DESARROLLO -->
+
+        <section class="bloque">
+
+            <h2>Desarrollo del juego</h2>
+
+            <div class="tarjetas">
+
+                <div class="tarjeta">
+                    <h3>Equipos</h3>
+                    <p>Computadora para desarrollo y pruebas.</p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Herramientas</h3>
+                    <p>Visual Studio Code y herramientas de diseño.</p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Tecnologías</h3>
+                    <p>HTML5, CSS3 y JavaScript.</p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Motor</h3>
+                    <p> Godot.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+      <!-- FOOTER -->
+        <footer class="footer">
+ 
+        <div class="footer-contenido">
+ 
+            <!-- Marca -->
+            <div class="footer-marca">
+                <h2>LA ODISEA</h2>
+                <p>
+                    Videojuego de acción y aventura donde un jaguar
+                    defiende a su universidad.
+                </p>
+                <span class="footer-etiqueta">🐆 Universidad Tecnológica de Nayarit</span>
+            </div>
+ 
+            <!-- Enlaces -->
+            <div class="footer-enlaces">
+                <h3>EXPLORA</h3>
+                <a href="Inicio.html">Inicio</a>
+                <a href="mecanicas.html">Mecánicas</a>
+                <a href="escenarios.html">Escenarios</a>
+                <a href="personajes.html">Personajes</a>
+                <a href="informacion.html">Información</a>
+            </div>
+ 
+            <!-- Desarrolladores -->
+            <div>
+                <h3>DESARROLLADORES</h3>
+ 
+                <div class="footer-equipo">
+ 
+                    <div class="desarrollador">
+                
+                        <div>
+                            <h4>Anel Elizabeth Moreno Avalos</h4>
+                            <a href="mailto:Tic-310025@utnay.edu.mx">Tic-310025@utnay.edu.mx</a>
+                        </div>
+                    </div>
+ 
+                    <div class="desarrollador">
+                        
+                        <div>
+                            <h4>José Armando Topete Fregoso</h4>
+                            <a href="mailto:Tic-310137@utnay.edu.mx">Tic-310137@utnay.edu.mx</a>
+                        </div>
+                    </div>
+ 
+                    <div class="desarrollador">
+                        
+                        <div>
+                            <h4>Christopher Martin Plascencia Dominguez</h4>
+                            <a href="mailto:Tic-310114@utnay.edu.mx">Tic-310114@utnay.edu.mx</a>
+                        </div>
+                    </div>
+ 
+                    <div class="desarrollador">
+                        
+                        <div>
+                            <h4>Nelly Jarei Gutiérrez Ruelas</h4>
+                            <a href="mailto:Tic-310151@utnay.edu.mx">Tic-310151@utnay.edu.mx</a>
+                        </div>
+                    </div>
+ 
+                    <div class="desarrollador">
+                        
+                        <div>
+                            <h4>Jesus Antonio Ornelas Gonzalez</h4>
+                            <a href="mailto:Tic-310167@utnay.edu.mx">Tic-310167@utnay.edu.mx</a>
+                        </div>
+                    </div>
+ 
+                    <div class="desarrollador">
+                       
+                        <div>
+                            <h4>Alex Gilberto Morales Bañuelos</h4>
+                            <a href="mailto:Tic-310195@utnay.edu.mx">Tic-310195@utnay.edu.mx</a>
+                        </div>
+                    </div>
+ 
+                </div>
+            </div>
+ 
+        </div>
+ 
+        <div class="footer-barra">
+            © 2026 La Odisea · Hecho con <span>♥</span> en Nayarit
+        </div>
+ 
+    </footer>
+    <!-- PWA: aviso accesible de conexión -->
+    <p id="pwa-estado" role="status" hidden style="position:fixed;bottom:12px;left:12px;right:12px;padding:12px;background:#2C3E50;color:white;text-align:center;z-index:1000"></p>
+</body>
+</html>

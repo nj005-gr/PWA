@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escenarios</title>
+    <link rel="stylesheet" href="inicio.css">
+    <!-- PWA: identidad e icono de la aplicación -->
+    <link rel="manifest" href="./manifest.webmanifest?v=3">
+    <meta name="theme-color" content="#101b17">
+    <link rel="icon" type="image/png" href="./icons/icon-192-v2.png">
+
+    <!-- PWA: registro del service worker -->
+    <script src="./pwa.js?v=4" defer></script>
+    <script src="./idioma.js" defer></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <a class="logo" href="Inicio.html">
+            <span class="logo-marca" aria-hidden="true"><svg viewBox="0 0 28 28" fill="none"><path d="M14 2 17.5 10.5 26 14 17.5 17.5 14 26 10.5 17.5 2 14 10.5 10.5Z" fill="currentColor"/><circle cx="14" cy="14" r="3" fill="#12221d"/></svg></span>
+            <span>La Odisea</span>
+        </a>
+        <button class="selector-idioma" type="button" aria-label="Cambiar a inglés" data-idioma="es">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c5 4 5 14 0 18-5-4-5-14 0-18Z"/></svg>
+            <span aria-hidden="true">ES</span><span aria-hidden="true">/</span><span aria-hidden="true">EN</span>
+        </button>
+        <button class="menu-toggle" type="button" aria-label="Menú de navegación" aria-controls="menu-principal" aria-expanded="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+        <nav class="menu" id="menu-principal" aria-label="Menú principal">
+            <a href="Inicio.html">Inicio</a>
+            <a href="mecanicas.html">Mecánicas</a>
+            <a href="escenarios.html" aria-current="page">Escenarios</a>
+            <a href="personajes.html">Personajes</a>
+            <a href="informacion.html">Información</a>
+        </nav>
+    </header>
+
+
+    <!-- CONTENIDO -->
+    <main class="contenido-historia">
+
+        <h1 class="titulo-personajes">Escenarios</h1>
+
+        <!-- tUTO -->
+        <section class="escenario">
+
+            <div class="imagen-historia">
+                <img src="img/Mapa.png" alt="Escenario 1">
+            </div>
+
+            <div class="texto-historia">
+                <h2>Mapa</h2>
+                <p>
+                    Recorrido general de la aventura a través de las universidades del mapa. 
+                    Víctor parte de la UT, continúa por UNIVAN y Vizcaya, y llega al Tec Tepic, donde se vive el final del juego.
+                    La UAN es una parada opcional con diálogos y conversación extra.
+                </p>
+                <span class="dato">Mapa</span>
+            </div>
+
+        </section>
+
+         <!-- NIVEL1-->
+        <section class="escenario">
+
+            <div class="imagen-historia">
+                <img src="img/subnivel.png" alt="Escenario 1">
+            </div>
+
+            <div class="texto-historia">
+                <h2>Universidad Tecnológica de Nayarit</h2>
+                <p>
+                    El Mundo 1 comienza en la UT, con el inicio del juego y la entrada al primer mapa, donde se cuenta la historia del comienzo. 
+                    Después se avanza por el Escenario 1, el Nivel 2 y el Nivel 3 con jefe, enfrentando entre 12 y 15 enemigos por zona y ganando recompensas en el camino.
+                </p>
+                <span class="dato">Tutorial</span>
+            </div>
+
+        </section>
+
+
+        <!-- Nivel 1 -->
+        <section class="escenario invertido">
+
+            <div class="imagen-historia">
+                <img src="img/nivel 1.png" alt="Escenario 2">
+            </div>
+
+            <div class="texto-historia">
+                <h2>Campus en Llamas</h2>
+                <p>
+                    Víctor recorre el campus en llamas, esquivando escombros y riesgos de fuego mientras derrota a los enemigos que le salen al paso. 
+                    Al terminar, desbloquea un aliado, Juanma, y una recompensa.
+                </p>
+                <span class="dato">Nivel 1</span>
+            </div>
+
+        </section>
+
+
+        <!-- Nivel2 -->
+        <section class="escenario">
+
+            <div class="imagen-historia">
+                <img src="img/Niverl3.jpeg" alt="Escenario 3">
+            </div>
+
+            <div class="texto-historia">
+                <h2>El laboratorio</h2>
+                <p>
+                    El combate se traslada dentro del laboratorio CMD de la UT, rodeada de humo, llantas quemadas y barricadas.
+                     Víctor debe abrirse paso entre los enemigos para avanzar en el nivel y desbloquear a un nuevo aliado.
+                </p>
+                <span class="dato">Nivel 2</span>
+            </div>
+
+        </section>
+
+    
+    </main>
+
+
+
+    <!-- FOOTER -->
+        <footer class="footer">
+ 
+        <div class="footer-contenido">
+ 
+            <!-- Marca -->
+            <div class="footer-marca">
+                <h2>LA ODISEA</h2>
+                <p>
+                    Videojuego de acción y aventura donde un jaguar
+                    defiende a su universidad.
+                </p>
+                <span class="footer-etiqueta">🐆 Universidad Tecnológica de Nayarit</span>
+            </div>
+ 
+            <!-- Enlaces -->
+            <div class="footer-enlaces">
+                <h3>EXPLORA</h3>
+                <a href="Inicio.html">Inicio</a>
+                <a href="mecanicas.html">Mecánicas</a>
+                <a href="escenarios.html">Escenarios</a>
+                <a href="personajes.html">Personajes</a>
+                <a href="informacion.html">Información</a>
+            </div>
+ 
+            <!-- Desarrolladores -->
+            <div>
+                <h3>DESARROLLADORES</h3>
+ 
+                <div class="footer-equipo">
+ 
+                    <div class="desarrollador">
+                
+                        <div>
+                            <h4>Anel Elizabeth Moreno Avalos</h4>
+                            <a href="mailto:Tic-310025@utnay.edu.mx">Tic-310025@utnay.edu.mx</a>
+                        </div>
+                    </div>
+ 
+                    <div class="desarrollador">
+                        
+                        <div>
+                            <h4>José Armando Topete Fregoso</h4>
+                            <a href="mailto:Tic-310137@utnay.edu.mx">Tic-310137@utnay.edu.mx</a>
+                        </div>
+                    </div>
+ 
+                    <div class="desarrollador">
+                        
+                        <div>
+                            <h4>Christopher Martin Plascencia Dominguez</h4>
+                            <a href="mailto:Tic-310114@utnay.edu.mx">Tic-310114@utnay.edu.mx</a>
+                        </div>
+                    </div>
+ 
+                    <div class="desarrollador">
+                        
+                        <div>
+                            <h4>Nelly Jarei Gutiérrez Ruelas</h4>
+                            <a href="mailto:Tic-310151@utnay.edu.mx">Tic-310151@utnay.edu.mx</a>
+                        </div>
+                    </div>
+ 
+                    <div class="desarrollador">
+                        
+                        <div>
+                            <h4>Jesus Antonio Ornelas Gonzalez</h4>
+                            <a href="mailto:Tic-310167@utnay.edu.mx">Tic-310167@utnay.edu.mx</a>
+                        </div>
+                    </div>
+ 
+                    <div class="desarrollador">
+                       
+                        <div>
+                            <h4>Alex Gilberto Morales Bañuelos</h4>
+                            <a href="mailto:Tic-310195@utnay.edu.mx">Tic-310195@utnay.edu.mx</a>
+                        </div>
+                    </div>
+ 
+                </div>
+            </div>
+ 
+        </div>
+ 
+        <div class="footer-barra">
+            © 2026 La Odisea · Hecho con <span>♥</span> en Nayarit
+        </div>
+ 
+    </footer>
+ 
+
+
+    <!-- PWA: aviso accesible de conexión -->
+    <p id="pwa-estado" role="status" hidden style="position:fixed;bottom:12px;left:12px;right:12px;padding:12px;background:#2C3E50;color:white;text-align:center;z-index:1000"></p>
+</body>
+
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Personajes</title>
+
+    <link rel="stylesheet" href="inicio.css">
+    <!-- PWA: identidad e icono de la aplicación -->
+    <link rel="manifest" href="./manifest.webmanifest?v=3">
+    <meta name="theme-color" content="#101b17">
+    <link rel="icon" type="image/png" href="./icons/icon-192-v2.png">
+
+    <!-- PWA: registro del service worker -->
+    <script src="./pwa.js?v=4" defer></script>
+    <script src="./idioma.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ============================= -->
+    <!-- HEADER -->
+    <!-- ============================= -->
+
+    <header class="header">
+        <a class="logo" href="Inicio.html">
+            <span class="logo-marca" aria-hidden="true"><svg viewBox="0 0 28 28" fill="none"><path d="M14 2 17.5 10.5 26 14 17.5 17.5 14 26 10.5 17.5 2 14 10.5 10.5Z" fill="currentColor"/><circle cx="14" cy="14" r="3" fill="#12221d"/></svg></span>
+            <span>La Odisea</span>
+        </a>
+        <button class="selector-idioma" type="button" aria-label="Cambiar a inglés" data-idioma="es">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c5 4 5 14 0 18-5-4-5-14 0-18Z"/></svg>
+            <span aria-hidden="true">ES</span><span aria-hidden="true">/</span><span aria-hidden="true">EN</span>
+        </button>
+        <button class="menu-toggle" type="button" aria-label="Menú de navegación" aria-controls="menu-principal" aria-expanded="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+        <nav class="menu" id="menu-principal" aria-label="Menú principal">
+            <a href="Inicio.html">Inicio</a>
+            <a href="mecanicas.html">Mecánicas</a>
+            <a href="escenarios.html">Escenarios</a>
+            <a href="personajes.html" aria-current="page">Personajes</a>
+            <a href="informacion.html">Información</a>
+        </nav>
+    </header>
+
+
+    <!-- ============================= -->
+    <!-- CONTENIDO -->
+    <!-- ============================= -->
+
+    <main class="contenido-personajes">
+
+        <h1 class="titulo-personajes">Personajes</h1>
+
+
+        <!-- ============================= -->
+        <!-- PRIMERA FILA -->
+        <!-- ============================= -->
+
+        <section class="fila-personajes">
+
+
+            <!-- PERSONAJE 1 -->
+
+            <article class="personaje">
+
+                <div class="imagen-personaje">
+                    <img src="img/principal.png" alt="Víctor el Jaguar">
+                </div>
+
+                <button class="boton-descripcion" onclick="mostrarDescripcion('descripcion1', this)" type="button" aria-expanded="false" aria-controls="descripcion1">
+                    Descripción
+                </button>
+
+                <div class="descripcion-personaje" id="descripcion1" hidden>
+
+                    <h3>Víctor el Jaguar</h3>
+
+                    <p>
+                        Víctor es el protagonista principal del videojuego y representa
+                        a la Universidad Tecnológica de Nayarit. Es un joven jaguar que
+                        deberá investigar lo ocurrido en su universidad después de que
+                        esta fuera vandalizada.
+                    </p>
+
+                    <p>
+                        Durante la aventura tendrá que explorar diferentes escenarios,
+                        superar obstáculos y enfrentarse a diversos personajes para
+                        descubrir quién está detrás de los conflictos.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- PERSONAJE 2 -->
+
+            <article class="personaje">
+
+                <div class="imagen-personaje">
+                    <img src="img/toño.png" alt="Tono el Tigre">
+                </div>
+
+                <button class="boton-descripcion" onclick="mostrarDescripcion('descripcion2', this)" type="button" aria-expanded="false" aria-controls="descripcion2">
+                    Descripción
+                </button>
+
+                <div class="descripcion-personaje" id="descripcion2" hidden>
+
+                    <h3>Toño el Tigre</h3>
+
+                    <p>
+                        Toño es un tigre que representa al TEC. Es uno de los principales
+                        rivales de Víctor y tiene una actitud competitiva frente a él.
+                    </p>
+
+                    <p>
+                        Su rivalidad será uno de los principales conflictos que Víctor
+                        deberá enfrentar durante su aventura.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- PERSONAJE 3 -->
+
+            <article class="personaje">
+
+                <div class="imagen-personaje">
+                    <img src="img/elias.png" alt="Elías el Ocelote">
+                </div>
+
+                <button class="boton-descripcion" onclick="mostrarDescripcion('descripcion3', this)" type="button" aria-expanded="false" aria-controls="descripcion3">
+                    Descripción
+                </button>
+
+                <div class="descripcion-personaje" id="descripcion3" hidden>
+
+                    <h3>Elías el Ocelote</h3>
+
+                    <p>
+                        Elías es un ocelote que representa a la Universidad Autónoma
+                        de Nayarit. Es un personaje con una personalidad particular
+                        y una forma diferente de enfrentarse a los conflictos.
+                    </p>
+
+                    <p>
+                        Su presencia forma parte de los encuentros que Víctor tendrá
+                        mientras intenta descubrir lo que está sucediendo.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+
+        <!-- ============================= -->
+        <!-- SEGUNDA FILA -->
+        <!-- ============================= -->
+
+        <section class="fila-personajes fila-secundaria">
+
+
+            <!-- PERSONAJE 4 -->
+
+            <article class="personaje">
+
+                <div class="imagen-personaje">
+                    <img src="img/nose.png" alt="Vicente el Águila">
+                </div>
+
+                <button class="boton-descripcion" onclick="mostrarDescripcion('descripcion4', this)" type="button" aria-expanded="false" aria-controls="descripcion4">
+                    Descripción
+                </button>
+
+                <div class="descripcion-personaje" id="descripcion4" hidden>
+
+                    <h3>Vicente el Águila</h3>
+
+                    <p>
+                        Vicente es un águila que representa a la Universidad Vizcaya.
+                        Es un personaje que destaca por su personalidad segura y por
+                        intentar resolver las situaciones utilizando sus recursos.
+                    </p>
+
+                    <p>
+                        Durante la historia, Víctor tendrá que interactuar con él
+                        mientras continúa investigando los acontecimientos.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- PERSONAJE 5 -->
+
+            <article class="personaje">
+
+                <div class="imagen-personaje">
+                    <img src="img/lion.png" alt="Lion el León">
+                </div>
+
+                <button class="boton-descripcion" onclick="mostrarDescripcion('descripcion5', this)" type="button" aria-expanded="false" aria-controls="descripcion5">
+                    Descripción
+                </button>
+
+                <div class="descripcion-personaje" id="descripcion5" hidden>
+
+                    <h3>Lion el León</h3>
+
+                    <p>
+                        Lion es un león que representa a la UNIVA. Es uno de los
+                        personajes que Víctor deberá enfrentar durante su recorrido.
+                    </p>
+
+                    <p>
+                        Su aparición representa uno de los desafíos que el protagonista
+                        deberá superar para continuar avanzando en la aventura.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <!-- ============================= -->
+    <!-- FOOTER -->
+    <!-- ============================= -->
+
+         <footer class="footer">
+ 
+        <div class="footer-contenido">
+ 
+            <!-- Marca -->
+            <div class="footer-marca">
+                <h2>LA ODISEA</h2>
+                <p>
+                    Videojuego de acción y aventura donde un jaguar
+                    defiende a su universidad.
+                </p>
+                <span class="footer-etiqueta">🐆 Universidad Tecnológica de Nayarit</span>
+            </div>
+ 
+            <!-- Enlaces -->
+            <div class="footer-enlaces">
+                <h3>EXPLORA</h3>
+                <a href="Inicio.html">Inicio</a>
+                <a href="mecanicas.html">Mecánicas</a>
+                <a href="escenarios.html">Escenarios</a>
+                <a href="personajes.html">Personajes</a>
+                <a href="informacion.html">Información</a>
+            </div>
+ 
+            <!-- Desarrolladores -->
+            <div>
+                <h3>DESARROLLADORES</h3>
+ 
+                <div class="footer-equipo">
+ 
+                    <div class="desarrollador">
+                
+                        <div>
+                            <h4>Anel Elizabeth Moreno Avalos</h4>
+                            <a href="mailto:Tic-310025@utnay.edu.mx">Tic-310025@utnay.edu.mx</a>
+                        </div>
+                    </div>
+ 
+                    <div class="desarrollador">
+                        
+                        <div>
+                            <h4>José Armando Topete Fregoso</h4>
+                            <a href="mailto:Tic-310137@utnay.edu.mx">Tic-310137@utnay.edu.mx</a>
+                        </div>
+                    </div>
+ 
+                    <div class="desarrollador">
+                        
+                        <div>
+                            <h4>Christopher Martin Plascencia Dominguez</h4>
+                            <a href="mailto:Tic-310114@utnay.edu.mx">Tic-310114@utnay.edu.mx</a>
+                        </div>
+                    </div>
+ 
+                    <div class="desarrollador">
+                        
+                        <div>
+                            <h4>Nelly Jarei Gutiérrez Ruelas</h4>
+                            <a href="mailto:Tic-310151@utnay.edu.mx">Tic-310151@utnay.edu.mx</a>
+                        </div>
+                    </div>
+ 
+                    <div class="desarrollador">
+                        
+                        <div>
+                            <h4>Jesus Antonio Ornelas Gonzalez</h4>
+                            <a href="mailto:Tic-310167@utnay.edu.mx">Tic-310167@utnay.edu.mx</a>
+                        </div>
+                    </div>
+ 
+                    <div class="desarrollador">
+                       
+                        <div>
+                            <h4>Alex Gilberto Morales Bañuelos</h4>
+                            <a href="mailto:Tic-310195@utnay.edu.mx">Tic-310195@utnay.edu.mx</a>
+                        </div>
+                    </div>
+ 
+                </div>
+            </div>
+ 
+        </div>
+ 
+        <div class="footer-barra">
+            © 2026 La Odisea · Hecho con <span>♥</span> en Nayarit
+        </div>
+ 
+    </footer>
+
+
+
+
+    <!-- ============================= -->
+    <!-- JAVASCRIPT -->
+    <!-- ============================= -->
+
+<!-- PWA: aviso accesible de conexión -->
+    <p id="pwa-estado" role="status" hidden style="position:fixed;bottom:12px;left:12px;right:12px;padding:12px;background:#2C3E50;color:white;text-align:center;z-index:1000"></p>
+</body>
+
+</html>
